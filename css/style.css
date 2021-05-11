@@ -133,7 +133,7 @@ body {
 }
 
 .header {
-  padding: 44px 0;
+  padding: 44px 0 37px;
 }
 .header__content {
   display: -webkit-box;
@@ -456,8 +456,8 @@ body {
   height: 100vh;
   position: relative;
   background: center/cover no-repeat;
-  -webkit-animation: slide 15s infinite;
-          animation: slide 15s infinite;
+  -webkit-animation: slide 20s ease-in-out infinite;
+          animation: slide 20s ease-in-out infinite;
 }
 @-webkit-keyframes slide {
   0% {

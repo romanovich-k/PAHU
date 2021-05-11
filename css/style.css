@@ -461,6 +461,11 @@ body {
   -webkit-animation: slide 20s ease-in-out infinite;
           animation: slide 20s ease-in-out infinite;
 }
+@media (max-width: 700px) {
+  .banner {
+    height: 80vh;
+  }
+}
 @-webkit-keyframes slide {
   0% {
     background-image: url(../img/shadow.png), url(../img/banner.png);

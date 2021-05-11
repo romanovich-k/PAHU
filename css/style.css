@@ -181,7 +181,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     overflow: auto;
-    background-color: rgba(24, 24, 23, 0.6);
+    background-color: rgba(24, 24, 23, 0.9);
     -webkit-transition: all 0.6s ease 0s;
     transition: all 0.6s ease 0s;
     padding: 30px 0 50px;
@@ -218,12 +218,14 @@ body {
     margin: 0 auto;
   }
 }
+.header__nav-link {
+  color: #fefefe;
+  text-transform: uppercase;
+}
 @media (min-width: 950px) {
   .header__nav-link {
     margin: 0 25px;
     padding-bottom: 40px;
-    color: #fefefe;
-    text-transform: uppercase;
     border-bottom: 4px solid transparent;
   }
   .header__nav-link:hover {
@@ -236,7 +238,7 @@ body {
   .header__nav-link {
     display: block;
     padding-bottom: 0;
-    margin: 0 auto 12px;
+    margin: 0 auto 13px;
     font-size: 20px;
   }
 }
@@ -516,6 +518,16 @@ body {
   top: 35%;
   left: 12%;
 }
+@media (max-width: 1200px) {
+  .banner__content {
+    top: 30%;
+  }
+}
+@media (max-width: 950px) {
+  .banner__content {
+    left: 10%;
+  }
+}
 .banner__suptitle {
   margin-bottom: 55px;
   font-size: 25px;
@@ -528,12 +540,50 @@ body {
   margin: 0 20px 5px 0;
   background-color: #fece76;
 }
+@media (max-width: 700px) {
+  .banner__suptitle::before {
+    width: 45px;
+  }
+}
+@media (max-width: 1200px) {
+  .banner__suptitle {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 950px) {
+  .banner__suptitle {
+    margin-bottom: 45px;
+    font-size: 23px;
+  }
+}
+@media (max-width: 700px) {
+  .banner__suptitle {
+    margin-bottom: 38px;
+  }
+}
 .banner__title {
   max-width: 552px;
   margin-bottom: 37px;
   font-size: 60px;
   font-weight: 600;
   text-transform: uppercase;
+}
+@media (max-width: 1200px) {
+  .banner__title {
+    font-size: 55px;
+  }
+}
+@media (max-width: 950px) {
+  .banner__title {
+    margin-bottom: 30px;
+    font-size: 50px;
+  }
+}
+@media (max-width: 700px) {
+  .banner__title {
+    margin-bottom: 25px;
+    font-size: 38px;
+  }
 }
 .banner__text {
   max-width: 527px;
@@ -543,4 +593,10 @@ body {
 .yellow-text {
   color: #fece76;
   font-weight: 600;
+}
+@media (max-width: 700px) {
+  .yellow-text {
+    display: block;
+    margin-top: 5px;
+  }
 }

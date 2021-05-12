@@ -998,6 +998,11 @@ body {
   position: relative;
   background-color: #ffce76;
 }
+@media (max-width: 950px) {
+  .shop__item {
+    width: 47%;
+  }
+}
 .shop__item:hover {
   -webkit-box-shadow: 0 0 38px rgba(190, 176, 150, 0.77);
           box-shadow: 0 0 38px rgba(190, 176, 150, 0.77);
@@ -1018,10 +1023,36 @@ body {
   padding: 10px 0 25px 25px;
   background-color: #ffffff;
 }
+@media (max-width: 1200px) {
+  .shop__item-content {
+    padding: 10px 0 20px 20px;
+  }
+}
+@media (max-width: 950px) {
+  .shop__item-content {
+    padding: 10px 0 15px 15px;
+  }
+}
+@media (max-width: 700px) {
+  .shop__item-content {
+    padding: 10px 0 10px 10px;
+  }
+}
 .shop__item-img {
-  margin-bottom: 25px;
+  display: block;
+  margin: 0 auto 25px;
   max-height: 200px;
   max-width: 200px;
+}
+@media (max-width: 1200px) {
+  .shop__item-img {
+    max-width: 170px;
+  }
+}
+@media (max-width: 700px) {
+  .shop__item-img {
+    max-width: 120px;
+  }
 }
 .shop__item-title {
   margin-bottom: 20px;
@@ -1030,16 +1061,49 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+@media (max-width: 950px) {
+  .shop__item-title {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .shop__item-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
 .shop__item-text {
   display: block;
   max-width: 191px;
   margin-bottom: 28px;
   color: #6d6d6d;
 }
+@media (max-width: 950px) {
+  .shop__item-text {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 700px) {
+  .shop__item-text {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+}
 .shop__item-price {
   font-size: 27px;
   font-weight: 600;
   color: #000000;
+}
+@media (max-width: 950px) {
+  .shop__item-price {
+    font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .shop__item-price {
+    font-size: 16px;
+  }
 }
 .shop__item-nav {
   width: 145px;
@@ -1061,6 +1125,12 @@ body {
   border-radius: 50px;
   opacity: 0;
 }
+@media (max-width: 700px) {
+  .shop__item-nav {
+    width: 110px;
+    height: 30px;
+  }
+}
 .shop__item-link {
   font-size: 18px;
   color: #ffffff;
@@ -1069,4 +1139,9 @@ body {
   color: rgba(0, 0, 0, 0.8);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+@media (max-width: 700px) {
+  .shop__item-link {
+    font-size: 16px;
+  }
 }

@@ -167,6 +167,13 @@ body {
     font-size: 30px;
   }
 }
+.section__title-black {
+  position: relative;
+  color: #181817;
+}
+.section__title-black::after {
+  background: url(../img/title2.png) center no-repeat;
+}
 
 .text {
   line-height: 19px;
@@ -966,4 +973,100 @@ body {
 
 .black-text {
   color: #352b30;
+}
+
+/*----SHOP----*/
+.shop {
+  background-color: #f9fafc;
+}
+.shop__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.shop__item {
+  width: 23%;
+  margin-bottom: 30px;
+  position: relative;
+  background-color: #ffce76;
+}
+.shop__item:hover {
+  -webkit-box-shadow: 0 0 38px rgba(190, 176, 150, 0.77);
+          box-shadow: 0 0 38px rgba(190, 176, 150, 0.77);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.shop__item:hover .shop__item-content {
+  opacity: 0.27;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.shop__item:hover .shop__item-nav {
+  opacity: 1;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.shop__item-content {
+  padding: 10px 0 25px 25px;
+  background-color: #ffffff;
+}
+.shop__item-img {
+  margin-bottom: 25px;
+  max-height: 200px;
+  max-width: 200px;
+}
+.shop__item-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000000;
+}
+.shop__item-text {
+  display: block;
+  max-width: 191px;
+  margin-bottom: 28px;
+  color: #6d6d6d;
+}
+.shop__item-price {
+  font-size: 27px;
+  font-weight: 600;
+  color: #000000;
+}
+.shop__item-nav {
+  width: 145px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(45, 58, 75, 0.6);
+  border-radius: 50px;
+  opacity: 0;
+}
+.shop__item-link {
+  font-size: 18px;
+  color: #ffffff;
+}
+.shop__item-link:hover {
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }

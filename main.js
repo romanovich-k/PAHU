@@ -1,9 +1,47 @@
+
+//Slider
+$(document).ready(function(){
+	$('.slider__content').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    infinite: false,
+    autoplaySpeed: 3500,
+    nextArrow: $(".next"),
+    prevArrow: $(".prev"),
+		responsive:[
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+		]
+	});
+});
+
 // Меню бургер
 $(document).ready(function() {
-	$('.nav__icon').click(function(event) {
-		$('.nav__icon,.header__info').toggleClass('active');
-		$('body').toggleClass('lock');
-	});
+  $('.nav__icon').click(function(event) {
+    $('.nav__icon,.header__info').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
 });
 
 $('.nav__body').click(function(){
@@ -13,19 +51,17 @@ $('.nav__body').click(function(){
 
 
 
-
 //Спойлеры
 
 $(document).ready(function() {
-	$('.block__title').click(function(event) {
-		if($('.block').hasClass('one')){
-			$('.block__title').not($(this)).removeClass('active');
-			$('.block__content').not($(this).next()).slideUp(300);
-		}
-		$(this).toggleClass('active').next().slideToggle(300);
-	});
+  $('.block__title').click(function(event) {
+    if($('.block').hasClass('one')){
+      $('.block__title').not($(this)).removeClass('active');
+      $('.block__content').not($(this).next()).slideUp(300);
+    }
+    $(this).toggleClass('active').next().slideToggle(300);
+  });
 });
-
 
 
 
@@ -47,7 +83,6 @@ for(let anchor of anchors) {
     })
   })
 }
-
 
 //button to top
 const backToTopButton = document.querySelector("#back-to-top-btn");
@@ -97,10 +132,10 @@ function smoothScrollBackToTop() {
 }
 
 function easeInOutCubic(t, b, c, d) {
-	t /= d/2;
-	if (t < 1) return c/2*t*t*t + b;
-	t -= 2;
-	return c/2*(t*t*t + 2) + b;
+  t /= d/2;
+  if (t < 1) return c/2*t*t*t + b;
+  t -= 2;
+  return c/2*(t*t*t + 2) + b;
 };
 
 //Плавающая шапка
@@ -109,47 +144,13 @@ window.addEventListener("scroll", function(){
   header.classList.toggle("sticky", window.scrollY > 190);
 });
 
-//Slider
-const sliderItem = document.querySelectorAll('.slider .slider__item');
-const sliderContent = document.querySelector('.slider .slider__content');
-let count = 0;
-let width;
 
-function init() {
-  console.log('resize');
-  width = document.querySelector('.slider').offsetWidth;
-  sliderContent.style.width = width * sliderItem.length + 'px';
-  sliderItem.forEach(item => {
-      item.style.width = width + 'px';
-      item.style.height = 'auto';
-  });
-  rollSlider();
-}
 
-init();
-window.addEventListener('resize', init);
 
-document.querySelector('.slider__next').addEventListener('click', function () {
-  count++;
-  if (count >= sliderItem.length) {
-      count = 0;
-  }
-  rollSlider();
-});
 
-document.querySelector('.slider__prev').addEventListener('click', function () {
-  count--;
-  if (count < 0) {
-      count = sliderItem.length - 1;
-  }
-  rollSlider();
-});
 
-function rollSlider() {
-  sliderContent.style.transform = 'translate(-' + count * width + 'px)';
 
-}
 
-//Дата в форме
-let today = new Date().toISOString().substr(0, 10);
-document.querySelector("#date").value = today;
+
+
+

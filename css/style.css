@@ -464,6 +464,7 @@ body {
   height: 32px;
   outline: 0;
   border: 2px solid #ffce76;
+  border-radius: 0;
   background-color: #fff;
 }
 @media (min-width: 950px) {
@@ -562,6 +563,7 @@ body {
   background: center/cover no-repeat;
   animation: slide 20s infinite;
   -webkit-animation: slide 20s infinite;
+  -moz-animation: slide 20s infinite;
 }
 @-webkit-keyframes slide {
   0% {

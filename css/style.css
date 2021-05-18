@@ -560,8 +560,8 @@ body {
   height: 90vh;
   position: relative;
   background: center/cover no-repeat;
+  animation: slide 20s infinite;
   -webkit-animation: slide 20s infinite;
-          animation: slide 20s infinite;
 }
 @-webkit-keyframes slide {
   0% {

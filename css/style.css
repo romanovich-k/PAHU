@@ -275,6 +275,11 @@ body {
 .header__info.active {
   top: 0;
 }
+@media (max-width: 950px) and (orientation: landscape) {
+  .header__info {
+    padding-top: 110px;
+  }
+}
 .header__logo {
   width: 20%;
 }

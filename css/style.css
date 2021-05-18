@@ -1041,7 +1041,7 @@ body {
 .shop__item-img {
   display: block;
   margin: 0 auto 25px;
-  max-height: 200px;
+  height: 200px;
   max-width: 200px;
 }
 @media (max-width: 1200px) {
@@ -1052,6 +1052,7 @@ body {
 @media (max-width: 700px) {
   .shop__item-img {
     max-width: 120px;
+    height: 120px;
   }
 }
 .shop__item-title {

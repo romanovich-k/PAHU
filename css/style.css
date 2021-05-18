@@ -464,8 +464,8 @@ body {
   height: 32px;
   outline: 0;
   border: 2px solid #ffce76;
-  border-radius: 0;
   background-color: #fff;
+  -webkit-appearance: none;
 }
 @media (min-width: 950px) {
   .search__input {
@@ -511,6 +511,7 @@ body {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   background-color: #181817;
+  -webkit-appearance: none;
 }
 .search__icon {
   font-size: 18px;
@@ -1695,6 +1696,7 @@ body {
   background-color: #181817;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-right: 0;
+  -webkit-appearance: none;
 }
 .footer__form-btn {
   height: 40px;
@@ -1705,6 +1707,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
   background-color: #181817;
   z-index: 5;
+  -webkit-appearance: none;
 }
 .footer__form-btn:hover {
   color: #fece76;

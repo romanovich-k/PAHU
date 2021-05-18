@@ -1375,7 +1375,7 @@ body {
   cursor: pointer;
   z-index: 5;
   border: 1px solid #ffffff;
-  background-color: #626262;
+  background-color: rgba(98, 98, 98, 0.6);
   border-radius: 50%;
 }
 @media (max-width: 1200px) {
@@ -1391,7 +1391,7 @@ body {
     padding-top: 7px;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 700px) {
   .prev, .next {
     width: 37px;
     height: 37px;

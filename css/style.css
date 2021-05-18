@@ -562,10 +562,10 @@ body {
   position: relative;
   background: center/cover no-repeat;
   animation: slide 20s infinite;
-  -webkit-animation: slide 20s infinite;
+  -webkit-animation: slide 15s ease-in infinite;
   -moz-animation: slide 20s infinite;
 }
-@-webkit-keyframes slide {
+@keyframes slide {
   0% {
     background-image: url(../img/shadow.png), url(../img/banner.png);
   }
@@ -582,7 +582,7 @@ body {
     background-image: url(../img/shadow.png), url(../img/banner2.jpeg);
   }
 }
-@keyframes slide {
+@-webkit-keyframes slide {
   0% {
     background-image: url(../img/shadow.png), url(../img/banner.png);
   }

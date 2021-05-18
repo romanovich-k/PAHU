@@ -19,14 +19,14 @@ $(document).ready(function(){
         }
       },
       {
-        breakpoint: 700,
+        breakpoint: 950,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 550,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1

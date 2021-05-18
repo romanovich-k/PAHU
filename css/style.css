@@ -1395,7 +1395,7 @@ body {
 }
 @media (max-width: 550px) {
   .prev, .next {
-    top: 32%;
+    top: 35%;
   }
 }
 

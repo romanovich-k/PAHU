@@ -1240,7 +1240,7 @@ body {
 }
 @media (max-width: 700px) {
   .team__item-title::after {
-    width: 30px;
+    width: 27px;
   }
 }
 

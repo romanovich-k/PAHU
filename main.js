@@ -45,7 +45,7 @@ $(document).ready(function() {
 });
 
 $('.nav__body').click(function(){
-    $('.nav__icon, .nav__body').removeClass('active');
+    $('.nav__icon, .header__info').removeClass('active');
     $('body').removeClass('lock');
 });
 
@@ -138,11 +138,6 @@ function easeInOutCubic(t, b, c, d) {
   return c/2*(t*t*t + 2) + b;
 };
 
-//Плавающая шапка
-window.addEventListener("scroll", function(){
-  let header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 190);
-});
 
 
 

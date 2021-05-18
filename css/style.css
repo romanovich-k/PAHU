@@ -1625,6 +1625,11 @@ body {
 .footer__logo {
   margin-bottom: 30px;
 }
+@media (max-width: 700px) {
+  .footer__logo {
+    margin: 0 auto 25px;
+  }
+}
 .footer__form {
   margin-bottom: 10px;
 }

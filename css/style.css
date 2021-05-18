@@ -1385,7 +1385,7 @@ body {
 }
 @media (max-width: 950px) {
   .prev, .next {
-    top: 45%;
+    top: 47%;
     width: 45px;
     height: 45px;
     padding-top: 7px;
@@ -1401,7 +1401,7 @@ body {
 }
 @media (max-width: 550px) {
   .prev, .next {
-    top: 35%;
+    top: 40%;
   }
 }
 

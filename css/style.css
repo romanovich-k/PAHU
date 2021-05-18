@@ -1269,6 +1269,29 @@ body {
   height: 95vh;
   overflow: hidden;
 }
+@media (max-width: 1200px) {
+  .slider__content {
+    padding: 50px 0 0 50px;
+    height: 90vh;
+  }
+}
+@media (max-width: 950px) {
+  .slider__content {
+    height: 85vh;
+  }
+}
+@media (max-width: 720px) {
+  .slider__content {
+    padding: 50px 0 0 45px;
+    height: 80vh;
+  }
+}
+@media (max-width: 550px) {
+  .slider__content {
+    padding: 40px 0 0 35px;
+    height: 70vh;
+  }
+}
 .slider__item {
   height: 95vh;
   width: 300px;

@@ -1390,7 +1390,10 @@ body {
 }
 @media (max-width: 720px) {
   .prev, .next {
-    top: 40%;
+    width: 37px;
+    height: 37px;
+    padding-top: 8px;
+    font-size: 20px;
   }
 }
 @media (max-width: 550px) {
@@ -1402,9 +1405,19 @@ body {
 .prev {
   left: 30px;
 }
+@media (max-width: 720px) {
+  .prev {
+    left: 20px;
+  }
+}
 
 .next {
   right: 30px;
+}
+@media (max-width: 720px) {
+  .next {
+    right: 20px;
+  }
 }
 
 /*----BLOG----*/

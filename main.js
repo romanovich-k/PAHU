@@ -6,7 +6,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     autoplay: true,
     infinite: false,
-    autoplaySpeed: 3500,
+    autoplaySpeed: 3000,
     nextArrow: $(".next"),
     prevArrow: $(".prev"),
 		responsive:[
@@ -15,14 +15,15 @@ $(document).ready(function(){
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          dots: true
+          dots: false
         }
       },
       {
         breakpoint: 950,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          autoplay: false
         }
       },
       {

@@ -563,18 +563,8 @@ body {
   -webkit-animation: slide 20s infinite;
           animation: slide 20s infinite;
 }
-@media (max-width: 950px) {
-  .banner {
-    height: 80vh;
-  }
-}
-@media (max-width: 700px) {
-  .banner {
-    height: 75vh;
-  }
-}
 @-webkit-keyframes slide {
-  0%, 100% {
+  0% {
     background-image: url(../img/shadow.png), url(../img/banner.png);
   }
   25% {
@@ -591,7 +581,7 @@ body {
   }
 }
 @keyframes slide {
-  0%, 100% {
+  0% {
     background-image: url(../img/shadow.png), url(../img/banner.png);
   }
   25% {
@@ -873,6 +863,7 @@ body {
 @media (max-width: 500px) {
   .accessories__item-title {
     margin-bottom: 10px;
+    max-width: 100px;
     font-size: 12px;
   }
 }
@@ -1281,6 +1272,11 @@ body {
 @media (max-width: 1200px) {
   .project__item-text {
     bottom: 115px;
+  }
+}
+@media (max-width: 950px) {
+  .project__item-text {
+    font-size: 18px;
   }
 }
 

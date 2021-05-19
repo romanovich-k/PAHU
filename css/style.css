@@ -587,43 +587,6 @@ body {
   height: 90vh;
   position: relative;
   background: center/cover no-repeat;
-  animation: slide 20s infinite;
-  -webkit-animation: slide 15s ease-in infinite;
-  -moz-animation: slide 20s infinite;
-}
-@keyframes slide {
-  0% {
-    background-image: url(../img/shadow.png), url(../img/banner.png);
-  }
-  25% {
-    background-image: url(../img/shadow.png), url(../img/banner5.jpg);
-  }
-  50% {
-    background-image: url(../img/shadow.png), url(../img/banner4.jpg);
-  }
-  75% {
-    background-image: url(../img/shadow.png), url(../img/banner3.jpg);
-  }
-  100% {
-    background-image: url(../img/shadow.png), url(../img/banner2.jpeg);
-  }
-}
-@-webkit-keyframes slide {
-  0% {
-    -webkit-background-image: url(../img/shadow.png), url(../img/banner.png);
-  }
-  25% {
-    -webkit-background-image: url(../img/shadow.png), url(../img/banner5.jpg);
-  }
-  50% {
-    -webkit-background-image: url(../img/shadow.png), url(../img/banner4.jpg);
-  }
-  75% {
-    -webkit-background-image: url(../img/shadow.png), url(../img/banner3.jpg);
-  }
-  100% {
-    -webkit-background-image: url(../img/shadow.png), url(../img/banner2.jpeg);
-  }
 }
 .banner__content {
   position: absolute;

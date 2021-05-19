@@ -180,34 +180,37 @@ body {
   line-height: 19px;
 }
 
-#back-to-top-btn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 26px;
-  width: 45px;
+.scroll-top {
   height: 45px;
-  background-color: #fff;
-  color: #000;
+  width: 45px;
+  background-color: #fece7f;
+  border: none;
+  color: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 5px;
+  font-size: 18px;
   cursor: pointer;
   outline: none;
-  border: 3px solid #000;
-  border-radius: 50%;
-  -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-in-out;
-       -o-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  -webkit-transition-property: background-color, color;
-  -o-transition-property: background-color, color;
-  transition-property: background-color, color;
+  display: none;
 }
-
-#back-to-top-btn:hover, #back-to-top-btn:focus {
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #fff;
+.scroll-top:hover {
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media (max-width: 700px) {
+  .scroll-top {
+    height: 35px;
+    width: 35px;
+    bottom: 20px;
+    right: 20px;
+  }
 }
 
 .header {

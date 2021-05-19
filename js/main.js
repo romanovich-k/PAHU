@@ -23,7 +23,6 @@ $(document).ready(function(){
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          autoplay: false
         }
       },
       {

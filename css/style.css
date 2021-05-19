@@ -1423,6 +1423,7 @@ body {
 
 .prev {
   left: 30px;
+  padding-right: 2px;
 }
 @media (max-width: 700px) {
   .prev {
@@ -1432,6 +1433,7 @@ body {
 
 .next {
   right: 30px;
+  padding-left: 2px;
 }
 @media (max-width: 700px) {
   .next {

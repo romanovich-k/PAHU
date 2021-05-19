@@ -1271,12 +1271,18 @@ body {
 }
 @media (max-width: 1200px) {
   .project__item-text {
-    bottom: 115px;
+    bottom: 105px;
   }
 }
 @media (max-width: 950px) {
   .project__item-text {
     font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  .project__item-text {
+    font-size: 16px;
+    bottom: 85px;
   }
 }
 
@@ -1399,33 +1405,37 @@ body {
 }
 @media (max-width: 700px) {
   .prev, .next {
-    width: 37px;
-    height: 37px;
-    padding-top: 8px;
+    width: 35px;
+    height: 35px;
+    padding-top: 7px;
     font-size: 20px;
   }
 }
 @media (max-width: 550px) {
   .prev, .next {
     top: 45%;
+    width: 30px;
+    height: 30px;
+    padding-top: 6px;
+    font-size: 18px;
   }
 }
 
 .prev {
   left: 30px;
 }
-@media (max-width: 720px) {
+@media (max-width: 700px) {
   .prev {
-    left: 20px;
+    left: 15px;
   }
 }
 
 .next {
   right: 30px;
 }
-@media (max-width: 720px) {
+@media (max-width: 700px) {
   .next {
-    right: 20px;
+    right: 15px;
   }
 }
 
